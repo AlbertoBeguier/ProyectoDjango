@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% load static %}  
+        <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+        <link href="{% static 'css/misEstilos.css' %}" rel="stylesheet" />
+    </head>
+    <body>
+
+<nav class="navbar navbar-light bg-light static-top">
+    <div class="container">
+
+        <div class="home-button">
+            <a class="navbar-brand" href="{% url 'Inicio' %}">Inicio</a>
+        </div>
+
+        <a class="navbar-brand" href="{% url 'Profesores' %}">Profesores</a>
+        <a class="navbar-brand" href="{% url 'Cursos' %}">Cursos</a>
+        <a class="navbar-brand" href="{% url 'Estudiantes' %}">Estudiantes</a>
+        <a class="navbar-brand" href="{% url 'Entregables' %}">Entregables</a>
+        <a class="btn btn-primary" href="#signup">Logearse</a>
+    </div>
+</nav>
+
+</body>

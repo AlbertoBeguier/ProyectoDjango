@@ -5,11 +5,11 @@ urlpatterns = [
     path("agrega-curso/<nombre>/<camada>/", Curso),
     path("listar_cursos/", listar_cursos),
     
-    path("", inicio), # no se pone nada así siempre lee el inicio
-    path("cursos/", cursos),
-    path("profesores/", profesores),
-    path("estudiantes/", estudiantes),
-    path("entregables/", entregables),
+    path("", inicio, name="Inicio"), 
+    path("cursos/", cursos, name="Cursos"),
+    path("profesores/", profesores, name="Profesores"),
+    path("estudiantes/", estudiantes, name="Estudiantes"),
+    path("entregables/", entregables, name="Entregables"),
     
 ]
 
