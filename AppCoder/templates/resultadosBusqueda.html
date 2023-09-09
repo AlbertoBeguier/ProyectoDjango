@@ -1,0 +1,21 @@
+{% extends 'padre.html' %}
+
+{% block contenidoQueCambia %}
+
+   <p> Resultados de la búsqueda del curso </p> 
+  
+   {% if curso %}
+      
+   <ul>     
+      {% for cur  in curso %}
+
+         <li> {{cur}}</li>
+      
+      {% endfor %}
+   </ul>
+
+    {% endif %}
+      
+{% endblock contenidoQueCambia %}
+
+

@@ -1,0 +1,21 @@
+{% extends 'padre.html' %}
+
+{% block contenidoQueCambia %}
+
+    <!-- etiqueta form para crear formulario-->
+    <!-- aquí no uso el metodo post ya que no cambio nada de la base de datos -->
+
+    <form action="{% url 'buscar'%}" method="get">
+        
+        <!-- Creamos un campo (input) para escribir el numero de camada que buscamos-->
+        <!-- name = camada -- es el nombre con el que recuperamos el nro ingresado -->
+        <p> Camada: <input type="number" name="camada"></p>>
+
+     <!-- botón tipo submit para enviar la request a la url buscar-->
+        <button type="submit"> Enviar </button>
+
+    </form>
+
+{% endblock contenidoQueCambia %}
+
+
